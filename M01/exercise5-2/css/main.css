@@ -1,0 +1,9 @@
+body h1.shadowBox{
+    border: 3px double black;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
