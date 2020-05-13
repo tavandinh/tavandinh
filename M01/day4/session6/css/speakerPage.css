@@ -1,0 +1,16 @@
+.new_detail{
+    float: left;
+    width: 50%;
+    border-right: 3px solid #ef9c00;
+}
+.new_detail img{
+    float: left;
+    width: 40%;
+    padding: 0 1em 1em 0;
+}
+.new_detail p{
+    float: left;
+    width: 100%;
+    margin: 0;
+    column-count: 3;
+}

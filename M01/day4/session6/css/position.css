@@ -1,0 +1,15 @@
+p{margin: 0;}
+body{
+    width: 550px;
+    margin: 0 25px 20px;
+    border: 1px solid black;
+    position: relative;
+}
+aside{
+    width: 80px;
+    padding: 1em;
+    border: 1px solid rgb(248, 6, 6);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
