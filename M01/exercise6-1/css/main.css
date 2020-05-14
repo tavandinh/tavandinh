@@ -1,0 +1,116 @@
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+  }
+html{
+    background-color: white;
+}
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+a{font-weight: bold;}
+a:link{color: #931420;}
+a:visited{color: #f2972e;}
+a:hover, a:focus{color: blue;}
+
+ul{line-height: 1.5;}
+li,p{font-size: 95%;}
+em{font-weight: bold;}
+
+/* the styles for the header */
+header{
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background: linear-gradient(30deg,#f6bb73 0%,#f6bb73 30%,white 50%,#f6bb73 80%,#f6bb73 100%);
+}
+header img { 
+    float: left;
+    padding: 0 30px;
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    text-align: left;
+    text-shadow: 2px 2px 2px black;
+}
+header h3{
+    font-size: 130%;
+    font-style: italic;
+    text-align: left;
+}
+
+header .shadow{
+    text-shadow: 2px 2px 2px #800000;
+}
+
+/* the styles for the content */
+main aside{
+    float: right;
+    width: 215px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+main section{
+    float: right;
+    width: 525px;
+    padding: 0 20px 20px;
+}
+/* main h1{
+    font-size: 150%;
+    color: #800000;
+    border-bottom: 3px solid #931420;
+    border-top: 3px solid #931420;
+    padding: .3em 0;
+} */
+main h2{
+    font-size: 130%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    color:  #800000;
+}
+main h3{
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+main img{
+    padding-bottom: 1em;
+    width: 50%;
+}
+main aside img{
+    padding-bottom: 1em;
+}
+main p {
+    padding-bottom: .5em;
+}
+main blockquote{
+    padding: 0 2em;
+}
+main ul{
+    padding: 0 0 1.25em 1em;
+}
+main li{
+    padding-bottom: 0.35em;
+}
+main .news{
+    margin-top: 1em;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+}
+/* the styles for the footer */
+
+footer{
+    clear: both;
+    font-size: 80%;
+    text-align: center;
+    color: white;
+    background-color: #800000;
+    padding: 1em;
+}
+
