@@ -6,8 +6,18 @@
     <title>San Joaquin Valley Town Hall</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> -->
+    <script src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({
+            prependTo:'#mobile_menu'
+            });
+        });
+
+    </script>
 </head>
 <body>
     <header>
@@ -93,13 +103,5 @@
     <footer>
        <p> &copy; 2018 San Joaquin Valley Town Hall, Fresno, CA 93755</p>
     </footer>
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> 
-    <script src="js/jquery.slicknav.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#nav_menu').slicknav({prependTo:"#mobile_menu"})
-        });
-    </script>
 </body>
 </html>

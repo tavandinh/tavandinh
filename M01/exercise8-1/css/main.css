@@ -229,9 +229,6 @@ footer{
     .slicknav_menu{
         background-color: #800000 !important;
     }
-    .slicknav_nav{
-        display: block;
-    }
     #nav_menu{
         display: none;
     }
