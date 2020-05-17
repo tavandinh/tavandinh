@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slicknav.css">
 </head>
 <body>
     <header>
@@ -14,6 +15,7 @@
         <h2>San Joaquin Valley Town Hall</h2>
         <h3><em> Celebrating our <span class="shadow">75<sup>th</sup></span> Year</em> </h3>
     </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="home.html" class="current">Home</a></li>
@@ -91,5 +93,13 @@
     <footer>
        <p> &copy; 2018 San Joaquin Valley Town Hall, Fresno, CA 93755</p>
     </footer>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> 
+    <script src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"})
+        });
+    </script>
 </body>
 </html>

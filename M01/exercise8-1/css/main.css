@@ -178,6 +178,9 @@ footer{
     padding: 1em;
 }
 
+#mobile_menu{
+    display: none;
+}
 @media screen and (max-width: 959px){
     body{
         background-color: red;
@@ -219,6 +222,18 @@ footer{
     }
     main aside div{
         column-count: 2;
+    }
+    #mobile_menu{
+        display: block;
+    }
+    .slicknav_menu{
+        background-color: #800000 !important;
+    }
+    .slicknav_nav{
+        display: block;
+    }
+    #nav_menu{
+        display: none;
     }
 }
 @media screen and (max-width: 480px){
