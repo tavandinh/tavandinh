@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    background: silver;
+    height: 200px;
+}
+#ul1 {
+    flex-wrap: wrap;
+}
+#ul2{
+    flex-wrap: wrap;
+    align-content: center;
+}
+#ul3{
+    flex-wrap: nowrap;
+}
+#ul4{
+    flex-flow: row wrap;
+}

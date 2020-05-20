@@ -1,0 +1,19 @@
+header, main, footer{
+    display: flex;
+}
+section{
+    flex-grow: 1;
+    background-color: #ededed;
+}
+@media screen and (max-width: 760px){
+    main {
+        flex-direction: column;
+    }
+    section{
+        order: 0;
+    }
+    aside{
+        order: 1;
+        flex-basis: auto;
+    }
+}

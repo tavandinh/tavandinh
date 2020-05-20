@@ -232,6 +232,9 @@ footer{
     #nav_menu{
         display: none;
     }
+    .slicknav_btn{
+        width: auto;
+    }
 }
 @media screen and (max-width: 480px){
     body{

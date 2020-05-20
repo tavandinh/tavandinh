@@ -1,0 +1,18 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    background: silver;
+    height: 90px;
+}
+#menu1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#home{
+    align-self: flex-end;
+}
+#menu2 {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
