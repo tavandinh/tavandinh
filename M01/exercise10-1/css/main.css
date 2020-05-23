@@ -14,6 +14,11 @@ body{
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
+    display: grid;
+    /* grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto; */
+    grid-template: repeat(4,auto)/auto 1fr;
+    grid-gap: 0;
 }
 /* the styles for link */
 a{
@@ -26,6 +31,10 @@ a:hover, a:focus{color: blue;}
 /* the styles for list */
 nav#nav_menu{
     position: relative;
+    grid-row: 2/3;
+    grid-column: 1/span 2;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
 }
 ul{
     line-height: 1.5;
@@ -43,6 +52,8 @@ nav#nav_menu ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    grid-column: 1/ span 5;
+    align-content: center;
 }
 nav#nav_menu ul li{
     /* float: left; */
@@ -82,6 +93,8 @@ nav#nav_menu ul.sub_nav_menu li{
 em{font-weight: bold;}
 /* the styles for the header */
 header{
+    grid-row: 1/2;
+    grid-column: 1/span 2;
     width: 100%;
     border-bottom: 3px solid #931420;
     padding-top: 1.5em;
@@ -110,19 +123,25 @@ header .shadow{
 
 /* the styles for the content */
 main{
-    display: flex;
+    display: grid;
     position: relative;
+    grid-row: 3/4;
+    grid-column: 1/span 2;
+    grid-template-columns: 1fr 30%;
 }
 main aside{
     /* float: right; */
     flex-basis: 30%;
     padding-left: 3%;
     padding-bottom: 3%;
+    grid-column-gap: 2.5%;
+    grid-column: 2;
 }
 main section{
     /* float: right; */
     flex-basis: 70%;
     padding: 0 3% 3%;
+    grid-column: 1;
 }
 main section div ul {
     display: flex;
@@ -188,6 +207,8 @@ footer{
     color: white;
     background-color: #800000;
     padding: 1em;
+    grid-row: 4/5;
+    grid-column: 1/span 2;
 }
 
 #mobile_menu{
@@ -207,49 +228,74 @@ footer{
 @media screen and (max-width: 767px){
     body{
         background-color: orange;
+        display: grid;
+        grid-template-rows: repeat(4,auto);
+
+    }
+    header{
+        grid-row: 1;
+        display: grid;
+        grid-template: repeat(3,auto)/auto;
+        grid-gap: 0.5em;
     }
     header h2{
         text-align: center;
+        grid-template-columns: 2/span1;
     }
     header h3{
         text-align: center;
+        grid-template-columns: 3/span1;
     }
     header img { 
         /* float: none; */
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto;   
+        /* grid-row: 1/2;  */
         display: block;
+        grid-template-columns: 1/span1;
     }
     main{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-row: 3;
     }
     main aside{
         /* float: none; */
-        width: 100%;
-        padding-left: 3%;
-        padding-right: 3%;
+        width: 92%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
         padding-bottom: 3%;
+        grid-row: 2;
+        grid-column: 1/span1;
     }
     main section{
         /* float: none; */
-        width: 100%;
-        padding: 0 3% 3%;
+        width: 92%;
+        margin: 0 2.5%;
+        grid-row: 1;
+        grid-column: 1/span1;
     }
     main aside div{
         column-count: 2;
     }
     #mobile_menu{
         display: block;
+        grid-row: 2/3;
+        grid-column: 1/span 2;
+        grid-row: 2;
     }
     .slicknav_menu{
         background-color: #800000 !important;
     }
-    #nav_menu{
+    nav#nav_menu{
         display: none;
     }
     .slicknav_btn{
         width: auto;
+    }
+    footer{
+        grid-row: 4;
     }
 }
 @media screen and (max-width: 480px){
