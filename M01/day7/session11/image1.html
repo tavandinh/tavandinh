@@ -1,0 +1,28 @@
+<head>
+    <style>
+        #small{
+            height: 150px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p><img src="images/cat.jpg" alt="cat" height="300" width="400">
+        &nbsp;&nbsp;
+        <figure>
+            <img src="images/cat.jpg" alt="cat" id="small">
+            <figcaption>cat</figcaption>
+        </figure>     
+        
+    </p>
+    <picture>
+        <source media="(min-width: 960px)" srcset="images/cat1.jpg">
+        <source media="(min-width: 786px)" srcset="images/cat2.jpg">
+        <source media="(min-width: 460px)" srcset="images/cat3.jpg">
+        <img src="images/cat.jpg" alt="cat">
+    </picture>
+    <picture>
+        <source srcset="images/cat.webp" type="image/webp">
+        <img src="images/cat.jpg" alt="">
+    </picture>
+</body>
