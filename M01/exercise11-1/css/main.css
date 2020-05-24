@@ -169,7 +169,15 @@ main h3{
 }
 main img{
     padding-bottom: 1em;
-    width: 50%;
+    width: 100%;
+}
+main section figure{
+    float: left;
+    border-bottom: 1px solid black;
+    margin: 0 1em 0 0;
+}
+main section figcaption{
+    font-weight: bold;
 }
 main aside img{
     padding-bottom: 1em;
@@ -189,14 +197,14 @@ main li{
     padding-bottom: 0.35em;
 }
 main article{
-    padding: .5em 0;
+    padding: 0.5em 0 2em 0;
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000;
 }
 main article img{
     /* float: right; */
-    margin-left: 1em;
-    max-width: 40%;
+    margin-left: 0;
+    max-width: 100%;
     min-width: 150px;
 }
 main article h2{
