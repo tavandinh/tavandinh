@@ -227,6 +227,34 @@ footer{
 #mobile_menu{
     display: none;
 }
+/*Css for table*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}  
+th {
+    text-align: left;
+    padding: 8px;
+    color: #800000;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+td {
+    text-align: left;
+    padding: 8px;
+}
+td.under-boder-td{
+    border-bottom: 2px solid #800000;
+}
+td.align-right-td{
+    text-align: right;
+    font-weight: bold;
+}
+td:hover{
+    background-color: #e2bebe;
+}
+
 @media screen and (max-width: 959px){
     body{
         background-color: red;
