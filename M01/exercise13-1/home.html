@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> -->
+    <script src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({
+            prependTo:'#mobile_menu'
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Town Hall Logo" width="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3><em> Celebrating our <span class="shadow">75<sup>th</sup></span> Year</em> </h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="home.html" class="current">Home</a></li>
+            <li><a href="home.html">Speaker</a></li>
+            <li><a href="home.html">Luncheons</a></li>
+            <li><a href="home.html">Tickets</a></li>
+            <li><a href="home.html">About US</a></a>
+                <ul class="sub_nav_menu">
+                    <li><a href="">Our History</a></li>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Past Speakers</a></li>
+                    <li><a href="">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main> 
+        <section class="content">
+            <div class="block">
+                <h2>Order From</h2>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Member Information</legend>
+                        <div class="fieldset_main">
+                            <div class="fieldset_label">
+                                <label for="email">E-Mail:</label><br><br>
+                                <label for="fname">First Name:</label><br><br>     
+                                <label for="lname">Last Name:</label><br><br>     
+                            </div>
+                            <div class="fieldset_input">
+                                <input type="email" id="email" name="email"><br><br>
+                                <input type="text" id="fname" name="fname"><br><br>
+                                <input type="text" id="lname" name="lname"><br><br>
+                            </div>
+                        </div>
+                        <div class="fieldset_main">
+                            <div class="fieldset_label">   
+                                <label for="address">Address:</label><br><br>
+                                <label for="city">City:</label><br><br>
+                                <label for="state">State:</label><br><br>    
+                            </div>
+                            <div class="fieldset_input">
+                                <input type="text" id="address" name="address"><br><br>
+                                <input type="text" id="city" name="city"><br><br>
+                                <input type="text" id="state" name="state" placeholder="2-character code" pattern="[A-Za-z\d]{2}" maxlength="2"><br><br>
+                            </div>
+                        </div>
+                        <div class="fieldset_main">
+                            <div class="fieldset_label">   
+                                <label for="zip">ZIP code:</label><br><br>
+                                <label for="phone">Phone Number:</label><br><br>
+                            </div>
+                            <div class="fieldset_input">
+                                <input type="text" id="zip" name="zip" placeholder="3 or 9 digits"><br><br>
+                                <input type="text" id="phone" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="999-999-9999"><br><br>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ordering Information</legend>
+                        <div class="fieldset_main">
+                            <div class="fieldset_label">
+                                <label for="oderType">Order Type:</label><br><br>     
+                                <label for="numberTickets">Number of Tickets:</label><br><br>
+                            </div>
+                            <div class="fieldset_input">
+                                <select name="oderType" id="oderType">
+                                    <option value="">Member Package</option>
+                                    <option value="">Donor Package</option>
+                                    <option value="">Single Tickets</option>
+                                </select>
+                                <br><br>
+                                <input type="text" id="numberTickets" name="numberTickets" placeholder="Number of single tickets"><br><br>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment Method</legend>
+                        <div style="text-align: center;">
+                            <input type="radio" id="bill" name="paymentMethod" value="bill"  checked>
+                            <label for="bill">Bill Me</label>
+                            <input type="radio" id="credit" name="paymentMethod" value="credit" style="margin-left: 3em;">
+                            <label for="credit">Credit Card</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Credit Card Information</legend>
+                        <div class="fieldset_main">
+                            <div class="fieldset_label">
+                                <label for="cardType">Card Type:</label><br><br>     
+                                <label for="cardNum">Card Number:</label><br><br>    
+                                <label for="cardExpMonth">Expiration Date:</label><br><br>
+                            </div>
+                            <div class="fieldset_input">
+                                <select name="cardType" id="cardType">
+                                    <option value="">Visa</option>
+                                    <option value="">MasterCard</option>
+                                    <option value="">Discover</option>
+                                </select><br><br>
+                                <input type="text" id="cardNum" name="cardNum" pattern="\d{16}" maxlength="16" placeholder="16 digits"><br><br>
+                                <select name="cardExpMonth" id="cardExpMonth">
+                                    <option value="">January</option>
+                                    <option value="">February</option>
+                                    <option value="">March</option>
+                                    <option value="">April</option>
+                                    <option value="">May</option>
+                                    <option value="">June</option>
+                                    <option value="">July</option>
+                                    <option value="">August</option>
+                                    <option value="">October</option>
+                                    <option value="">November</option>
+                                    <option value="">December</option>
+                                </select>
+                                <select name="cardExpYear" id="cardExpYear">
+                                    <option value="">2017</option>
+                                    <option value="">2018</option>
+                                    <option value="">2019</option>
+                                    <option value="">2020</option>
+                                    <option value="">2021</option>
+                                </select>
+                                <br><br>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Submit Your Order</legend>
+                        <div class="fieldset_main">
+                            <div class="fieldset_label">
+                            </div>
+                            <div class="fieldset_input">
+                                <input type="submit" value="submit" class="button">
+                                <input type="button" value="Reset Fields" class="button">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <aside>
+            <h2>Guest speakers</h2>
+            <div>
+                <div>
+                    <h3>October</h3>
+                    <!-- <h3><a href="">Jeffrey Toobin</a></h3> -->
+                    <figure>
+                        <figcaption><a href="">Jeffrey Toobin</a></figcaption>
+                        <img src="images/images.png" alt="Jeffrey Toobin">
+                    </figure>
+                </div>
+                <div>
+                    <h3>November</h3>
+                    <h3><a href="">Andrew Ross Sorkin</a></h3>
+                    <img src="images/images.png" alt="Andrew Ross Sorkin">
+                </div>
+                <div>
+                    <h3>January</h3>
+                    <h3><a href="">Amy Chua</a></h3>
+                    <img src="images/images.png" alt="Amy Chua">
+                </div>
+                <div>
+                    <h3>February</h3>
+                    <h3><a href="">Scott Sampson</a></h3>
+                    <img src="images/images.png" alt="Amy Chua">
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+       <p> &copy; 2018 San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+</html>
