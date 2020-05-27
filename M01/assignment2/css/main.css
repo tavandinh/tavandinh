@@ -1,0 +1,96 @@
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+  }
+html{
+    background-color: white;
+}
+/* the styles for header */
+header{
+    border-bottom: 3px solid red;
+}
+div.header{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+/* the styles for logo */
+img.logo{
+    width: 20%;
+    height: 15%;
+    min-width:  200px;
+    min-height:  100px;
+    grid-column: 1;
+    grid-row: 1;
+}
+/* the styles for link */
+a{
+    font-weight: bold;
+    width: 100%;
+}
+
+a:link{color: #931420;}
+a:visited{color: #f2972e;}
+a:hover, a:focus{color: blue;}
+/* the styles for list */
+nav#nav_menu{
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    height: 50%;
+}
+ul{
+    line-height: 1.5;
+    list-style-type: circle;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+}
+li,p{font-size: 95%;}
+
+nav#nav_menu ul{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-column: 1/ span 5;
+    align-content: center;
+}
+nav#nav_menu ul li{
+    /* float: left; */
+    flex-basis: 20%;
+}
+nav#nav_menu ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav#nav_menu ul li a:hover{
+    background-color: #a13939;
+}
+nav#nav_menu ul li a.current{
+    color: yellow;
+}
+nav#nav_menu ul li:hover > ul{
+    display: block;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+nav#nav_menu ul.sub_nav_menu{
+    display: none;
+}
+nav#nav_menu ul.sub_nav_menu li{
+    /* clear: both; */
+    /* float: none; */
+    width: 20%;
+    top: 100;
+}
