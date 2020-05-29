@@ -1,0 +1,31 @@
+<p>
+    <script>
+        var today = new Date();
+        document.write("Current date: ");
+        document.write(today.toDateString());
+    </script>
+</p>
+<p>
+    <script>
+        var today = new Date();
+        document.write("&copy;&nbsp;");
+        document.write(today.getFullYear());
+        document.write(", San Joaquin Valley Town Hall");
+    </script>
+</p>
+<input type="text" id="username" value="">
+<button onclick="printTOC()">Test</button>
+<script>
+    function myFunction(){
+        alert("");
+        document.getElementById("username").value  = "Hello";
+    }
+</script>
+
+<input type="button" id="print" value="Print the TOC" onclick="printTOC()">
+<script>
+    function printTOC(){
+        alert();
+        window.print();
+    }
+</script>
