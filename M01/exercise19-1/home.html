@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/printPage.css" media="print">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> -->
+    <script src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({
+            prependTo:'#mobile_menu'
+            });
+        });
+
+    </script>
+    <script src="js/printPage.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Town Hall Logo" width="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3><em> Celebrating our <span class="shadow">75<sup>th</sup></span> Year</em> </h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="home.html" class="current">Home</a></li>
+            <li><a href="home.html">Speaker</a></li>
+            <li><a href="home.html">Luncheons</a></li>
+            <li><a href="home.html">Tickets</a></li>
+            <li><a href="home.html">About US</a></a>
+                <ul class="sub_nav_menu">
+                    <li><a href="">Our History</a></li>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Past Speakers</a></li>
+                    <li><a href="">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main> 
+        <section class="content">
+            <div class="block">
+                <h2>Our Mission</h2>
+                <p>San Joaquin Valley Town Hall is a non-profit organization that is run by an all-volunteer board of directors. Our mission is to bring nationally and 
+                    internationally renowned, thought-provoking speakers who inform, educate, and entertain our audience! As one or our members told us:</p>
+                <blockquote>"Each year i give a ticket package to each of our family members. I think of it as the gift of knowledge...and that is priceless"</blockquote>
+            </div>
+            <br>
+            <h1>Speaker of the Month</h1>
+            <article>
+                <h2>Fossil Theards in the Web of Llife</h2><br>
+                <!-- <img src="images/sampson_dinosaur.jpg" alt="images"> -->
+                <!-- <img src="images/sampson_dinosaur.webp" alt="WebP Image"> -->
+                <figure>
+                    <picture>
+                        <source srcset="images/sampson_dinosaur.webp" type="image/webp">
+                        <img src="images/sampson_dinosaur.jpg" alt="">
+                        <figcaption>Scott Sampson and Friend</figcaption>
+                    </picture>
+                </figure>
+                <h3>February</h3>
+                <h3>Scott Sampson</h3> <br>
+                <p>What's 75 million years old and brand spanking new? A teenage Utahceratops! 
+                    Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, 
+                    Research Curator at the Utah Museum of Natural History, steps to the podium. 
+                    Sampson's research has focused on the ecology and evolution of 
+                    late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa. <br>
+                <a href="speaker/sampson.html">Read more</a> <a href="sampson.html"> Or play video</a>
+            </article>
+            <br>
+            <div class="block">
+                <h2>Our Tikcet Packages</h2>
+                <ul>
+                    <li>Season Package:$95</li>
+                    <li>Patron Package:$200</li>
+                    <li>Single Speaker:$25</li>
+                </ul>
+            </div>
+        </section>
+        <aside>
+            <button id="printButton" onclick="printPage()">Print Page</button>
+            <h2>Guest speakers</h2>
+            <div>
+                <div>
+                    <h3>October</h3>
+                    <!-- <h3><a href="">Jeffrey Toobin</a></h3> -->
+                    <figure>
+                        <figcaption><a href="">Jeffrey Toobin</a></figcaption>
+                        <img src="images/images.png" alt="Jeffrey Toobin">
+                    </figure>
+                </div>
+                <div>
+                    <h3>November</h3>
+                    <h3><a href="">Andrew Ross Sorkin</a></h3>
+                    <img src="images/images.png" alt="Andrew Ross Sorkin">
+                </div>
+                <div>
+                    <h3>January</h3>
+                    <h3><a href="">Amy Chua</a></h3>
+                    <img src="images/images.png" alt="Amy Chua">
+                </div>
+                <div>
+                    <h3>February</h3>
+                    <h3><a href="">Scott Sampson</a></h3>
+                    <img src="images/images.png" alt="Amy Chua">
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+       <p> &copy; <span id="year"> 2018</span> San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+</html>
