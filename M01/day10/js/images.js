@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $("#image_rollovers").each(function(){
+$(document).ready(function () {
+    $("#image_rollovers img").each(function(){
         //get old and new urls
         var oldURL = $(this).attr("src");
         var newURL = $(this).attr("id");
