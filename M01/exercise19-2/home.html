@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> -->
+    <script src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({
+            prependTo:'#mobile_menu'
+            });
+        });
+
+    </script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Town Hall Logo" width="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3><em> Celebrating our <span class="shadow">75<sup>th</sup></span> Year</em> </h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="home.html" class="current">Home</a></li>
+            <li><a href="home.html">Speaker</a></li>
+            <li><a href="home.html">Luncheons</a></li>
+            <li><a href="home.html">Tickets</a></li>
+            <li><a href="home.html">About US</a></a>
+                <ul class="sub_nav_menu">
+                    <li><a href="">Our History</a></li>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Past Speakers</a></li>
+                    <li><a href="">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main> 
+        <h2>JQuery Image Swaps</h2>
+        <div id="image_list">
+            <img src="images/h1.jpg" alt="Jeffrey Toobin">
+            <img src="images/h2.jpg" alt="Andrew Ross Sorkin">
+            <img src="images/h3.jpg" alt="Amy Chua">
+            <img src="images/h4.jpg" alt="Joaquin">
+        </div>
+        <br>
+        <h2 id="image_alt"></h2>
+        <div id="image">
+            <img src="" alt="">
+        </div>
+    </main>
+    <footer>
+       <p> &copy; <span id="year"> aa</span> San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+</html>
