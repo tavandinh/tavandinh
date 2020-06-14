@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Discount Calculator </title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="content">
+        <h1>Input data</h1>
+        <form action="display_result.php" method="post">
+            <div id="data">
+                <label class="left_label">Radio button:</label>
+                <input type="radio" name="radio_data" value="radio_data_1">
+                <label>radio_data_1</label>
+                <input type="radio" name="radio_data" value="radio_data_2">
+                <label>radio_data_2</label>
+                <br>
+
+                <label class="left_label">Checkbox:</label>
+                <input type="checkbox" name="check_box" value="Yes">
+                <br>
+
+                <label class="left_label">Text:</label>
+                <input type="text" name="text" id="">
+                <br>
+
+                <label class="left_label">Comment:</label>
+                <textarea name="comment" rows="4" cols="40">Test</textarea>
+                <br>
+
+            </div>
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="get data"> <br>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
