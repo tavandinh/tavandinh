@@ -1,0 +1,15 @@
+.user-menu {
+    list-style: none outside none;
+}
+
+.user-menu li {
+    display: inline-block;
+}
+
+.error {
+
+}
+
+.border-red {
+    border: solid 1px red;
+}
